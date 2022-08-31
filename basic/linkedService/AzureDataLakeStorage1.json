@@ -1,0 +1,19 @@
+{
+	"name": "AzureDataLakeStorage1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://rajeevtranslab.dfs.core.windows.net",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "RajeevKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "rajeevkvnewaccesskey"
+			}
+		}
+	}
+}

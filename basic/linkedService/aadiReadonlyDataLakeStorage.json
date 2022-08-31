@@ -1,0 +1,11 @@
+{
+	"name": "aadiReadonlyDataLakeStorage",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlstraining01.dfs.core.windows.net/"
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"name": "RajeevDataLakeStorage",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "link to rajeevs storage account.",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://rajeevtranslab.dfs.core.windows.net/"
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"name": "Binarycompresseddestination",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "RajeevDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Data destination ADF/Binary Compressed",
+				"fileSystem": "rajeevcontainer"
+			},
+			"compression": {
+				"type": "gzip",
+				"level": "Fastest"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

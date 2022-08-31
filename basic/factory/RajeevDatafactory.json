@@ -1,0 +1,9 @@
+{
+	"name": "RajeevDatafactory",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b2825655-032e-4afd-a0aa-779676adced6",
+		"tenantId": "e94ad81e-d07a-4dd5-a808-2271a395a380"
+	}
+}

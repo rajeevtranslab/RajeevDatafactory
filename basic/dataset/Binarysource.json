@@ -1,0 +1,20 @@
+{
+	"name": "Binarysource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "aadiReadonlyDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Application_Cities.csv",
+				"folderPath": "Source Data/Application_Cities",
+				"fileSystem": "logicaldw"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

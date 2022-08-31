@@ -1,0 +1,28 @@
+{
+	"name": "CSVsemicolonsource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "aadiDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Application_DeliveryMethods.csv",
+				"folderPath": "Source Data/Application_DeliveryMethods",
+				"fileSystem": "logicaldw"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
